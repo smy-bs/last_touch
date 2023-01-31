@@ -152,9 +152,11 @@ p {
 /* Home */
 #home {
   background: url('imgs/logos/CTA.jpg') center/cover no-repeat;
-  padding: 40px;
-  padding-top: 120px;
+  padding: 600px;
+  padding-top: 270px;
   text-align: center;
+  background-size: cover;
+  
 }
 
 .home__avatar {
@@ -162,6 +164,14 @@ p {
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+}
+.home__container{
+  width:550px;
+ position:absolute;
+ top:300px;
+ background-color: var(--color-dark-grey);
+ border-radius:18px ;
+ display:none;
 }
 
 .home__title,
@@ -493,6 +503,16 @@ p {
 
   .navbar__menu.open {
     display: block;
+  }
+
+  #home {
+    background: url('imgs/logos/CTA.jpg') center/cover no-repeat;
+    padding: 50px;
+    padding-top: 400px;
+    text-align: center;
+    background-size: contain;
+    
+    
   }
 
   .section {
