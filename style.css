@@ -127,7 +127,7 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
- color:var(--color-white);
+  color:var(--color-white);
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
@@ -151,7 +151,7 @@ p {
 
 /* Home */
 #home {
-  background: url('imgs/logos/home-background.png') center/cover no-repeat;
+  background: url('imgs/logos/CTA.jpg') center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
