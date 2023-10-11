@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram feed</title>
+    <style>
+        #gallery{
+            width:90%;
+            margin:3em auto;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        #gallery li{
+            width:25%;
+            list-style: none;
+
+        }
+        #gallery li img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul id="gallery"></ul>
+    <script src="instafeed.min.js"></script>
+    
+<script>
+    var feed = new Instafeed({
+        target:'gallery',
+        template:'<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a><h4>{{caption}}</h4></li>',
+      accessToken: 'IGQWROMFVBbmhFdTJyT1VCSlpmYWVDejRYZAE41Q21qTDNFZATdKT2FEZAHZAQU1FCcEpfekM4ZA1hfcl9xbjJndGI2SmE3VUZAvaFMyd09pdXFuRjNtb185ZAWhLZA1gzekk1SWhHcGd2YkhvajRSU0JUczFLMlZAVMWlHSmcZD'
+    });
+    feed.run();
+</script>
+</body>
+</html>
