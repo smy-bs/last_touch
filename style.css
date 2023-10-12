@@ -134,8 +134,7 @@ p {
 .logo_miyoung {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: white;
-  height: 80px;
+    height: 60px;
 }
 
 .navbar__menu {
@@ -145,15 +144,15 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
-  color: var(--color-white);
+  color: var(--color-text);
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  border-bottom:1px solid var(--color-accent);
+  
 }
 
 .navbar__toggle-btn {
@@ -273,6 +272,11 @@ p {
   text-align: left;
   color: var(--color-black);
 }
+.job__description:hover{
+  color: var(--color-accent-variant);
+  font-size: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
 
 /* Skill */
 
@@ -307,9 +311,7 @@ p {
   background-color: var(--color-primary);
   color: var(--color-text);
 }
-
 .skill {
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -318,6 +320,7 @@ p {
 .skill__description {
   display: flex;
   justify-content: space-between;
+  gap:1rem;
 }
 .skill__bar {
   width: 100%;
@@ -337,6 +340,7 @@ p {
 .tools {
   padding: 1rem;
 }
+
 .etc {
   padding: 2.6rem;
   background-color: var(--color-primary);
@@ -439,7 +443,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-accent-variant);
+  color: var(--color-accent);
 }
 
 .project__description h3:after {
@@ -480,7 +484,7 @@ p {
 }
 .contact__link:hover {
   color: var(--color-accent-variant);
-}
+  }
 .copyright {
   font-size: 0.8rem;
 }
@@ -576,9 +580,10 @@ p {
   }
 
   .skillset {
+    display:flex;
     flex-direction: column;
   }
-
+  
   .category__btn {
     margin: 4px 0;
     width: 100%;
@@ -588,25 +593,6 @@ p {
     flex-grow: 1;
   }
 
-  .testimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial__avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  .testimonial__avatar:nth-child(even),
-  .testimonial__avatar:nth-child(odd) {
-    margin: 0;
-    margin-bottom: 8px;
-  }
-
-  .testimonial__speech-bubble {
-    order: 1;
-  }
 
   .arrow-up {
     width: 50px;
