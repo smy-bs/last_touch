@@ -245,7 +245,7 @@ p {
 
 .about__list__item:nth-child(1){flex-grow: 1;}
 .about__list__item:nth-child(2){flex-grow: 1;}
-.about__list__item:nth-child(3){flex-grow: 2;}
+.about__list__item:nth-child(3){flex-grow: 3;}
 
 .about__icon {
   font-size: 3.5rem;
